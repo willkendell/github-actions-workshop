@@ -1,0 +1,26 @@
+{
+  "name": "github-actions-workshop",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Kardelio/github-actions-workshop#readme",
+  "bugs": {
+    "url": "https://github.com/Kardelio/github-actions-workshop/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kardelio/github-actions-workshop.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo \"just drag and drop the index file into browser\" && exit 0",
+    "test": "jest",
+    "nothing": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.2.0"
+  }
+}
