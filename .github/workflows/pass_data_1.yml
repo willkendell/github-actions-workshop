@@ -1,0 +1,23 @@
+name: Pass data between steps
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Compute version
+        id: shh_message
+        shell: bash
+        run: |
+          SECRET_MESSAGE="Staffs Uni is the GOAT"
+          echo "MESSAGE=$SECRET_MESSAGE" >> "$GITHUB_OUTPUT"
+
+      - name: Show version (from output)
+        run: |
+          echo "The Message is: ${{ steps.shh_message.outputs.MESSAGE }}"
