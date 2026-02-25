@@ -1,0 +1,15 @@
+name: Cow
+
+on:
+  workflow_dispatch:
+    branches [main]
+
+jobs:
+  cow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cows
+        uses: mscoutermarsh/cowsays-action@master
+        with:
+          text: 'say something'
+          color: 'red'
