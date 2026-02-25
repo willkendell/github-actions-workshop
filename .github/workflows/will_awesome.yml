@@ -1,0 +1,14 @@
+name: Will Awesome
+
+on:
+  issues:
+    types: [ opened ]
+
+jobs:
+  print-issue:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print
+      run: |
+        echo "Hello World"
+      
